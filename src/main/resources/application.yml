@@ -1,0 +1,11 @@
+spring:
+  ai:
+    ollama:
+      api-key: jack
+      base-url: http://localhost:11434/
+      chat:
+        options:
+          model: deepseek-r1:1.5b
+      embedding:
+        model: nomic-embed-text
+
