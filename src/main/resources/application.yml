@@ -5,7 +5,17 @@ spring:
       base-url: http://localhost:11434/
       chat:
         options:
-          model: deepseek-r1:1.5b
+          model: qwen3:1.7b
       embedding:
         model: nomic-embed-text
+    mcp:
+      client:
+        enabled: true
+        name: mcp-client
+        version: 1.0
+        type: SYNC
+        request-timeout: 60s
+        stdio:
+          servers-configuration: classpath:/mcp-server-settings.json
+
 
