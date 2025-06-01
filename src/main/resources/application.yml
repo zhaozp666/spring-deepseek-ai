@@ -17,5 +17,9 @@ spring:
         request-timeout: 60s
         stdio:
           servers-configuration: classpath:/mcp-server-settings.json
-
+        sse:
+          connections:
+            webmvc-mcp-server:
+              url: http://localhost:8081
+              sse-endpoint: /sse
 
